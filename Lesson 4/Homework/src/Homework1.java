@@ -1,6 +1,6 @@
-public class Homework1x {
+public class Homework1 {
     public static void main(String[] args) {
-//Bài 1: Viết chương trình liệt kê các số nguyên có 7 đến 9 chữ số thoả mãn:
+// Viết chương trình liệt kê các số nguyên có 7 đến 9 chữ số thoả mãn:
 //a) Là số thuận nghịch.
 //b) Chỉ có chữ số 0, 6, 8
 //c) Tổng chữ số chia hết cho 10
@@ -22,17 +22,27 @@ public class Homework1x {
     }
 
     public static boolean chua068(int n) {
-        int soBanDau = n;
         int[] a = {0, 6, 8};
+        boolean check = false;
         while (n > 0) {
-            for (int i = 0; i < a.length; i++) {
-                if (n % 10 != a[i]) {
-                    return false;
+            // chạy từng phần tử trong a, hễ có chữ số trùng 1 phần tử thì break, chạy tiếp chữ số hàng tiếp để so sánh.
+            for (int j = 0; j < a.length; j++) {
+                check = false;
+                if (a[j] == n % 10) {
+                    check = true;
+                    break;
                 }
+            }
+
+            //Đối với mỗi chữ số của n, chạy hết các phần tử của a mà vẫn ko có số trùng thì return luôn vì false từ đây)
+            if (!check) {
+                return check;
             }
             n /= 10;
         }
-        return true;
+
+        // chạy hết các chữ số của mà ko bị false lần nào, thì số đó ok, return giá trị true.
+        return check;
     }
 
     public static boolean tongChuSoChiaHet10(int n) {
@@ -42,7 +52,7 @@ public class Homework1x {
             n /= 10;
         }
 
-        return S == 10;
+        return S % 10 == 0;
     }
 
 }

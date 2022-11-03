@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
-public class Homework3 {
+public class Homework19 {
+// Thực hiện nhập vào một mảng số nguyên a có n phần tử (n>0).
+// Tìm số lớn nhất và nhỏ nhất trong mảng a.
     public static void main(String[] args) {
-//  Nhập số n và dãy các số nguyên a[0], a[1],…, a[n-1]
-// rồi sắp xếp dãy trên theo thứ tự tăng dần.
         System.out.print("Nhập số n (số phần tử mảng) ");
         int n = new Scanner(System.in).nextInt();
-        xuatMang(sapXepMang(nhapMang(n)));
+        int[] mang = sapXepMang(nhapMang(n));
+        System.out.println("Số lớn nhất trong mảng là " + mang[n - 1]);
+        System.out.println("Số bé nhất trong mảng là " + mang[0]);
     }
 
     public static int[] nhapMang(int n) {
@@ -31,12 +33,4 @@ public class Homework3 {
         }
         return arr;
     }
-
-    public static void xuatMang(int[] arr) {
-        System.out.println("Chuỗi theo thứ tự tăng dần là ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + "\t");
-        }
-    }
-
 }
