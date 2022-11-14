@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 import java.util.Scanner;
 
@@ -41,7 +41,7 @@ public class Person implements Inputable{
     }
 
     @Override
-    public void inputInfo() {
+    public void inputInfo(){
         System.out.print("Nhập tên: ");
         this.name = new Scanner(System.in).nextLine();
         System.out.print("Nhập địa chỉ: ");

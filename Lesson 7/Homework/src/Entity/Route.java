@@ -46,10 +46,10 @@ public class Route implements Inputable{
     public void inputInfo() {
         this.routeId = AUTO_ID;
         AUTO_ID++;
-//        System.out.print("Nhập khoảng cách: ");
-//        this.distance = new Scanner(System.in).nextDouble();
-//        System.out.print("Nhập số điểm dừng: ");
-//        this.stopNum = new Scanner(System.in).nextInt();
+        System.out.print("Nhập khoảng cách: ");
+        this.distance = new Scanner(System.in).nextDouble();
+        System.out.print("Nhập số điểm dừng: ");
+        this.stopNum = new Scanner(System.in).nextInt();
     }
 
 }
