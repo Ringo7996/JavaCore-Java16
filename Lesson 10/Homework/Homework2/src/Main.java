@@ -13,6 +13,9 @@ public class Main {
     private static void addNember() {
         System.out.print("Nhập số thành viên muốn thêm: ");
         int memberNumber;
+        Integer [] arr = new Integer[4];
+
+        //ArrayList<int>
 
         do {
             memberNumber = new Scanner(System.in).nextInt();
