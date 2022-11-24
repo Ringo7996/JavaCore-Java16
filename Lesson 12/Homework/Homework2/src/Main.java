@@ -54,8 +54,8 @@ public class Main {
                 typeC++;
             }
         }
-        System.out.println("Số học sinh xếp loại A là "+typeA);
-        System.out.println("Số học sinh xếp loại B là "+typeB);
-        System.out.println("Số học sinh xếp loại C là "+typeC);
+        System.out.println("Phần trăm số học sinh xếp loại A là "+(double)typeA/students.size());
+        System.out.println("Phần trăm số học sinh xếp loại B là "+ (double) typeB/students.size());
+        System.out.println("Phần trăm số học sinh xếp loại C là "+(double)typeC/students.size());
     }
 }
