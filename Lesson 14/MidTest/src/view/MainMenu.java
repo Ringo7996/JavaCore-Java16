@@ -1,14 +1,13 @@
 package view;
 
-import Action.ForgotPassword;
-import Action.SignIn;
-import Action.SignUp;
+import action.SignIn;
+import action.SignUp;
 import entity.Account;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static Action.GeneralHandle.*;
+import static action.GeneralHandle.*;
 
 public class MainMenu {
     public void mainMenu() {

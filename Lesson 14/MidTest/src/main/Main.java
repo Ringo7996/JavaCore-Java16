@@ -1,6 +1,6 @@
 package main;
 
-import Action.GeneralHandle;
+import action.GeneralHandle;
 import entity.Account;
 import view.MainMenu;
 

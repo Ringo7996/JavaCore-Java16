@@ -1,11 +1,11 @@
-package Action;
+package action;
 
 import entity.Account;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static Action.GeneralHandle.*;
+import static action.GeneralHandle.*;
 
 public class SignUp {
     public Account signUp(Scanner scanner, ArrayList<Account> accounts) {

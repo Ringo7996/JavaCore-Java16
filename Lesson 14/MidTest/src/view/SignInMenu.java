@@ -1,12 +1,12 @@
 package view;
 
-import Action.SignIn;
+import action.SignIn;
 import entity.Account;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static Action.GeneralHandle.*;
+import static action.GeneralHandle.*;
 
 public class SignInMenu {
 

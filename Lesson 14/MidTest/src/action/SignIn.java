@@ -1,4 +1,4 @@
-package Action;
+package action;
 
 import entity.Account;
 import view.MainMenu;
@@ -6,7 +6,7 @@ import view.MainMenu;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static Action.GeneralHandle.*;
+import static action.GeneralHandle.*;
 
 public class SignIn {
     public Account signIn(Scanner scanner, ArrayList<Account> accounts) {
