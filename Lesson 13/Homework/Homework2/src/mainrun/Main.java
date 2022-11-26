@@ -12,13 +12,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Techmaster techmaster = new Techmaster();
         Scanner scanner = new Scanner(System.in);
+        Techmaster techmaster = new Techmaster();
         Menu menu = new Menu();
         while (true) {
             menu.showMenu();
-            menu.chooseFunction(scanner);
+            menu.chooseFunction(scanner, techmaster);
         }
     }
-
 }

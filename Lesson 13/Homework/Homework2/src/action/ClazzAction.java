@@ -6,6 +6,8 @@ import entity.Student;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static action.GeneralHandle.inputInterger;
+
 public class ClazzAction {
 
     public ArrayList<Student> students = new ArrayList<>();
@@ -15,11 +17,8 @@ public class ClazzAction {
         String subject = scanner.nextLine();
         System.out.print("Nhập số lượng học viên trong lớp: ");
         int studentNumber = 0;
-        try {
-            studentNumber = Integer.parseInt(scanner.nextLine());
-        } catch (Exception e) {
-            System.out.println("Số lượng học viên không hợp lệ, vui lòng nhập số nguyên. ");
-        }
+        studentNumber = inputInterger(scanner, studentNumber);
+
         for (int i = 0; i < studentNumber; i++) {
             StudentAction studentAction = new StudentAction();
             Student student = studentAction.inputStudent(scanner);
@@ -33,13 +32,13 @@ public class ClazzAction {
     public Clazz addStudent(Scanner scanner, Clazz clazz) {
         StudentAction studentAction = new StudentAction();
         System.out.print("Nhập số học viên muốn thêm: ");
-        int studentNumber = Integer.parseInt(scanner.nextLine());
+        int studentNumber = 0;
+        studentNumber = inputInterger(scanner, studentNumber);
+
         for (int i = 0; i < studentNumber; i++) {
             Student student = studentAction.inputStudent(scanner);
             clazz.getStudents().add(student);
         }
-
         return clazz;
     }
-
 }
