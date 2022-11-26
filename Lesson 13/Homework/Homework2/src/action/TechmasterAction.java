@@ -6,6 +6,7 @@ import entity.Techmaster;
 import java.util.Scanner;
 
 public class TechmasterAction {
+    public Techmaster techmaster = new Techmaster();
     public Techmaster inputTechmaster(Scanner scanner) {
         System.out.print("Nhập tên bạn quản lí: ");
         String classManager = scanner.nextLine();
@@ -17,5 +18,11 @@ public class TechmasterAction {
 
         Techmaster techmaster = new Techmaster(classManager, teacher, clazz);
         return techmaster;
+
+        Object Interger;
+        Interger
     }
+
+
+
 }
