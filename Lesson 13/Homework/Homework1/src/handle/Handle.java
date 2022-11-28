@@ -4,7 +4,9 @@ import constant.Sex;
 import constant.Type;
 import entity.Pet;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -115,6 +117,7 @@ public class Handle {
         Pet pet12 = new Pet("Tun", "Alaska", 2, "boy", "spoiled", "dog", "5");
         Pet pet13 = new Pet("Milo", "Xiêm", 1, "girl", "angry", "cat", "6");
         Pet pet14 = new Pet("Mic", "Ta", 3, "boy", "cute", "cat", "7");
+        addList(pets);
         pets.add(pet1);
         pets.add(pet2);
         pets.add(pet3);
@@ -129,6 +132,8 @@ public class Handle {
         pets.add(pet12);
         pets.add(pet13);
         pets.add(pet14);
+
+        ArrayList<Pet> pets1 = new ArrayList<>(Arrays.asList(pet1,pet2,pet3,pet4,pet5,pet6,pet7,pet8));
     }
 
     public int inputNumber(Scanner scanner, int number) {
