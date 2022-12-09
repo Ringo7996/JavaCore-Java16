@@ -1,12 +1,11 @@
 package handle;
 
-import entity.Book;
 import entity.Library;
 import entity.Reader;
 
 import java.util.Scanner;
 
-public class ReaderHandle implements Service<Reader> {
+public class ReaderHandle implements IService<Reader> {
     public Reader inputInfo(Scanner scanner) {
         System.out.print("Nhập id bạn đọc: ");
         int id;

@@ -5,7 +5,7 @@ import entity.Library;
 
 import java.util.Scanner;
 
-public class BookHandle implements Service<Book> {
+public class BookHandle implements IService<Book> {
     public Book inputInfo(Scanner scanner) {
         System.out.print("Nhập id sách: ");
         int id;
